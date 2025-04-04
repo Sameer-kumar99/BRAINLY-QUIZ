@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brainly Quiz</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div id="quiz-container">
+            <h1>Brainly Quiz</h1>
+            <div id="welcome-screen">
+                <p>Welcome to the Brainly Quiz! Test your knowledge with a series of questions.</p>
+                <button id="start-btn">Start Quiz</button>
+            </div>
+            <div id="question-container" class="hide">
+                <div id="progress-bar">
+                    <div id="progress-indicator"></div>
+                </div>
+                <div id="question-info">
+                    <span id="question-number">Question 1/10</span>
+                    <span id="timer">00:00</span>
+                </div>
+                <h2 id="question">Question text will appear here</h2>
+                <div id="answer-buttons" class="btn-grid">
+                    <!-- Answer buttons will be inserted here -->
+                </div>
+                <div class="controls">
+                    <button id="next-btn" class="control-btn hide">Next</button>
+                </div>
+            </div>
+            <div id="results-container" class="hide">
+                <h2>Quiz Results</h2>
+                <div id="score-display">
+                    <div id="score-circle">
+                        <span id="score">0</span>/<span id="total-questions">0</span>
+                    </div>
+                    <p id="score-message">Your performance message will appear here</p>
+                </div>
+                <div id="results-summary">
+                    <!-- Results summary will be inserted here -->
+                </div>
+                <button id="restart-btn">Restart Quiz</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
